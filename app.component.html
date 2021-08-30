@@ -1,0 +1,11 @@
+<h1> {{title}}</h1>   
+<input type="text" [(ngModel)]="model" >
+<button (click)="add()">click</button> 
+<ul>
+    <li *ngFor="let i of models">{{i}}
+        <button  (click)="remove()">Delete</button>
+    </li>
+    
+</ul>
+
+
